@@ -34,7 +34,6 @@ This project is inspired from instagram and allow anyone to login with google an
 
 -----------------------
 ----Technology used----
------------------------
 - Next.js(React)
 - Tailwind CSS
 - Firebase (ver-9)
