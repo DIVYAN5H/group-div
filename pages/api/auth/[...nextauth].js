@@ -12,16 +12,16 @@ export default NextAuth({
   ],
 
   // Default log-in screen
-  theme: {
-    logo: "/logo.svg",
-    brandColor: "#F13287",
-    colorScheme: "auto",
-  },
+  // theme: {
+  //   logo: "/logo.svg",
+  //   brandColor: "#F13287",
+  //   colorScheme: "auto",
+  // },
 
   // Coustom Made Page
-  // pages: {
-  //   signIn: "/auth/signin",
-  // },
+  pages: {
+    signIn: "/auth/signin",
+  },
 
   callbacks: {
     async session({ session, token, user }) {
