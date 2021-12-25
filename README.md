@@ -47,5 +47,7 @@ headlessui is used </br>
 react-moment for timestamps </br>
 
 ## Error report:
-- signin feature doesn't work on hosting. (error-500: server error )
+- signin feature doesn't work when deployed. (error-500: server error )
 - faker.js is unable to provide images. (error-404)
+
+[![Deployed](https://vercel.com/button)](https://group-div.vercel.app/)
