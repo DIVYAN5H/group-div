@@ -5,12 +5,12 @@ function signIn({ providers }) {
   return (
     <>
       <Header />
-      <div className="flex flex-col items-center justify-center min-h-screen py-2 -mt-5 px-14 text-center">
-        <img className="w-80" src="https://links.papareact.com/ocw" alt="" />
-        <p className="font-xs italic">
-            This is not a <span className="text-red-500">real</span> app, it is built for educational purposes.
+      <div className="flex flex-col items-center justify-center text-center">
+        <img className="scale-90" src="/logo.svg" alt="" />
+        <p className="font-xs italic -mt-5">
+            This is not a <span className="text-red-500">real</span> app, it is built for fun and educational purposes.
         </p>
-        <div className="mt-10">
+        <div className="mt-5">
           {Object.values(providers).map((provider) => (
             <div key={provider.name}>
               <button

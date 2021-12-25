@@ -19,17 +19,18 @@ function Header() {
   const router = useRouter();
 
   return (
-    <div className="shadow-md border-b bg-white sticky top-0 z-50">
-      <div className="flex justify-between bg-white max-w-6xl mx-5 lg:mx-auto">
+    <div className="shadow-md border-b bg-[#FDFFFC] sticky top-0 z-50">
+      <div className="flex justify-between bg-[#FDFFFC] h-14 max-w-6xl mx-5 lg:mx-auto">
         {/* Left */}
         <div
           onClick={() => router.push("/")}
-          className="relative hidden lg:inline-grid w-24 cursor-pointer"
+          className="relative hidden lg:inline-grid w-64 cursor-pointer"
         >
           <Image
-            src="https://links.papareact.com/ocw"
+            src="/logo.svg"
             layout="fill"
             objectFit="contain"
+            className="scale-125"
           />
         </div>
 
@@ -38,14 +39,14 @@ function Header() {
           className="relative w-10 lg:hidden flex-shrink-0 cursor-pointer"
         >
           <Image
-            src="https://links.papareact.com/jjm"
+            src="/logoM.svg"
             layout="fill"
             objectFit="contain"
           />
         </div>
 
         {/* Middle - Search input field*/}
-        <div className="max-w-xs">
+        {/* <div className="max-w-xs">
           <div className="relative mt-1 p-3 rounded-md">
             <div className="absolute inset-y-0 pl-3 flex items-center pointer-events-none">
               <SearchIcon className="h-5 w-5 text-gray-500" />
@@ -56,38 +57,38 @@ function Header() {
               placeholder="Search"
             />
           </div>
-        </div>
+        </div> */}
 
         {/* Right */}
         <div className="flex items-center justify-end space-x-4">
-          <HomeIcon onClick={() => router.push("/")} className="navBtn" />
-          <MenuIcon className="h-6 md:hidden cursor-pointer" />
+          <HomeIcon onClick={() => router.push("/")} className="navBtn text-[#161925]" />
+          {/* <MenuIcon className="h-6 md:hidden cursor-pointer" /> */}
 
           {session ? (
             <>
-              <div className="relative navBtn">
+              {/* <div className="relative navBtn">
                 <PaperAirplaneIcon className="navBtn rotate-45" />
                 <div className="absolute -top-1 -right-1 text-xs w-5 h-5 rounded-full bg-red-500 flex items-center justify-center animate-pulse text-white">
                   2
                 </div>
-              </div>
+              </div> */}
               <PlusCircleIcon
                 onClick={() => setOpen(true)}
-                className="navBtn"
+                className="navBtn text-[#161925]"
               />
-              <UserGroupIcon className="navBtn" />
-              <HeartIcon className="navBtn" />
+              {/* <UserGroupIcon className="navBtn" /> */}
+              {/* <HeartIcon className="navBtn" /> */}
               <img
                 src={session.user.image}
                 alt="User"
-                className="h-10 w-10 rounded-full"
+                className="h-12 w-12 rounded-full"
               />
-              <button className="text-blue-400 text-s" onClick={signOut}>
+              <button className="text-blue-600 text-s" onClick={signOut}>
                 Sign Out
               </button>
             </>
           ) : (
-            <button className="text-blue-400 text-s" onClick={signIn}>
+            <button className="text-blue-600 text-s" onClick={signIn}>
               Sign In
             </button>
           )}

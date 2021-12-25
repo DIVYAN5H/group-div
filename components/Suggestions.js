@@ -33,7 +33,7 @@ function Suggestions() {
               Works at {profile.company.name}
             </h3>
           </div>
-          <button className="text-blue-400 text-s">Follow</button>
+          <button className="text-blue-600 text-s">Follow</button>
         </div>
       ))}
     </div>

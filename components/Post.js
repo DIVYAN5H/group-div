@@ -99,11 +99,14 @@ function Post({ id, username, userImg, img, caption }) {
         <div className="flex justify-between px-4 py-2">
           <div className="flex space-x-4">
             {hasliked ? (
-              <HeartIconFilled onClick={likePost} className="btn text-red-500"/>
+              <HeartIconFilled
+                onClick={likePost}
+                className="btn scale-105 text-red-500"
+              />
             ) : (
               <HeartIcon onClick={likePost} className="btn" />
             )}
-            <ChatIcon className="btn" />
+            {/* <ChatIcon className="btn" /> */}
             <PaperAirplaneIcon className="btn rotate-45" />
           </div>
           <BookmarkIcon className="btn" />
@@ -112,7 +115,7 @@ function Post({ id, username, userImg, img, caption }) {
 
       {/* Caption */}
       <p className="px-4 py-2">
-        {likes.length > 0&& (
+        {likes.length > 0 && (
           <p className="font-bold mb-1">{likes.length} likes</p>
         )}
         <span className="font-bold">{username} </span>
@@ -140,7 +143,7 @@ function Post({ id, username, userImg, img, caption }) {
           ))}
         </div>
       )}
-      {/* Input box */}
+      {/* Input box/ Add comment */}
       {session && (
         <form className="flex items-center p-4">
           <EmojiHappyIcon className="btn" />
@@ -156,7 +159,7 @@ function Post({ id, username, userImg, img, caption }) {
             disabled={!comment}
             // disabled={!comment.trim()} // error- comment.trim() is not a function
             onClick={sendComment}
-            className="font-semibold text-blue-400"
+            className="font-semibold text-blue-600"
           >
             Post
           </button>
