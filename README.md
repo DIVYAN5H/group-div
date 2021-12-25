@@ -46,6 +46,6 @@ NextAuth.js for sign-in authentication</br>
 headlessui is used </br>
 react-moment for timestamps </br>
 
-##Error report:
+## Error report:
 - signin feature doesn't work on hosting. (error-500: server error )
 - faker.js is unable to provide images. (error-404)
