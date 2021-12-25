@@ -51,3 +51,4 @@ react-moment for timestamps </br>
 ## Error report:
 - signin feature doesn't work when deployed. (error-500: server error )
 - faker.js is unable to provide images. (error-404)
+- components/Posts/line:17 can not set db as dependecy of useEfect. (can not use before initialization)
