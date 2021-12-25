@@ -31,6 +31,8 @@ Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&ut
 
 This project is inspired from instagram and allow anyone to login with google and post images and comments
 
+[![Deployed group-div](https://vercel.com/button)](https://group-div.vercel.app/)
+
 
 -----------------------
 ----Technology used----
@@ -49,5 +51,3 @@ react-moment for timestamps </br>
 ## Error report:
 - signin feature doesn't work when deployed. (error-500: server error )
 - faker.js is unable to provide images. (error-404)
-
-[![Deployed](https://vercel.com/button)](https://group-div.vercel.app/)
