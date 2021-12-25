@@ -36,12 +36,13 @@ function Header() {
 
         <div
           onClick={() => router.push("/")}
-          className="relative w-10 lg:hidden flex-shrink-0 cursor-pointer"
+          className="relative w-32 lg:hidden flex-shrink-0 cursor-pointer"
         >
           <Image
-            src="/logoM.svg"
+            src="/logo.svg"
             layout="fill"
             objectFit="contain"
+            className="scale-110"
           />
         </div>
 
@@ -61,7 +62,7 @@ function Header() {
 
         {/* Right */}
         <div className="flex items-center justify-end space-x-4">
-          <HomeIcon onClick={() => router.push("/")} className="navBtn text-[#161925]" />
+          <HomeIcon onClick={() => router.push("/")} className="navBtn hidden md:inline-flex text-[#161925]" />
           {/* <MenuIcon className="h-6 md:hidden cursor-pointer" /> */}
 
           {session ? (
@@ -74,7 +75,7 @@ function Header() {
               </div> */}
               <PlusCircleIcon
                 onClick={() => setOpen(true)}
-                className="navBtn text-[#161925]"
+                className="navBtn text-[#161925] "
               />
               {/* <UserGroupIcon className="navBtn" /> */}
               {/* <HeartIcon className="navBtn" /> */}

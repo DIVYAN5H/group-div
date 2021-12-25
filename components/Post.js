@@ -85,7 +85,7 @@ function Post({ id, username, userImg, img, caption }) {
       <div className="flex items-center px-5 py-2">
         <img
           src={userImg}
-          className="rounded-full h-12 w-12 object-contain border p-1"
+          className="rounded-full h-12 w-12 object-contain p-1"
         />
         <p className="flex-1 font-bold">{username}</p>
         <DotsHorizontalIcon className="h-5" />
