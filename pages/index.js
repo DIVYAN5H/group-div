@@ -8,7 +8,7 @@ export default function Home() {
     <div className="bg-gray-50 h-screen overflow-y-scroll scrollbar-hide">
       <Head>
         <title>Group-div</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logoM.svg"/>
       </Head>
 
       <Header />
