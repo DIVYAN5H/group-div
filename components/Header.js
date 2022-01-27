@@ -67,12 +67,14 @@ function Header() {
 
           {session ? (
             <>
-              {/* <div className="relative navBtn">
-                <PaperAirplaneIcon className="navBtn rotate-45" />
-                <div className="absolute -top-1 -right-1 text-xs w-5 h-5 rounded-full bg-red-500 flex items-center justify-center animate-pulse text-white">
-                  2
-                </div>
-              </div> */}
+              <div className="relative navBtn">
+                <a href="https://direct-div.vercel.app/" _blank>
+                  <PaperAirplaneIcon className="navBtn rotate-45"/>
+                  {/* <div className="absolute -top-1 -right-1 text-xs w-5 h-5 rounded-full bg-red-500 flex items-center justify-center animate-pulse text-white">
+                    2
+                  </div> */}
+                </a>
+              </div>
               <PlusCircleIcon
                 onClick={() => setOpen(true)}
                 className="navBtn text-[#161925] "
